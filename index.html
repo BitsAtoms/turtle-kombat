@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turtle Kombat · Party Wagon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="--accent:#39ff6a;">
+  <main class="arcade">
+    <div class="screen">
+      <video id="fightVideo" playsinline preload="auto"></video><audio id="arenaAudio" preload="auto"><source src="assets/arena-voice.mp3" type="audio/mpeg"></audio>
+      <img id="roundStill" alt="Presentación de ronda">
+      <div id="roundHud" aria-hidden="true"><img id="roundHudImage" alt=""></div>
+      <div class="sequence-overlay hidden" id="sequenceOverlay"><span id="sequenceLabel"></span></div>
+      <div class="countdown-overlay hidden" id="countdownOverlay"><span id="countdownLabel"></span></div>
+      <div class="overlay hidden" id="finishOverlay"><p class="finish-title">GAME OVER</p><p>El torneo ha terminado</p></div>
+      <div class="overlay hidden" id="restartOverlay"><p class="finish-title">REINICIANDO EL JUEGO</p><p>Preparando el siguiente combate...</p></div>
+    </div>
+  </main>
+  <script src="sound.js"></script><script src="game.js"></script>
+</body>
+</html>
